@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 # Some of this might be best in a constants.py file and read here and in app.py
 TABLE_NAME = 'new_etl_pets_table'
 INDEX_COLUMN = 'id'
-SOURCE_FILE = "pets.csv"
+SOURCE_FILE = "etl/pets.csv"
 SOURCE_SQL = f"SELECT * FROM {TABLE_NAME};"
 # (https://help.heroku.com/ZKNTJQSK/
 # why-is-sqlalchemy-1-4-x-not-connecting-to-heroku-postgres)
